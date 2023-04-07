@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="fr">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Un jeu de données pour répondre à des questions visuelles à propos d&apos;entités nommées en utilisant des bases de connaissances</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Paul</forename><surname>Lerner</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution" key="instit1">Université Paris-Saclay</orgName>
+								<orgName type="institution" key="instit2">CNRS</orgName>
+								<orgName type="institution" key="instit3">LISN</orgName>
+								<address>
+									<postCode>91400</postCode>
+									<settlement>Orsay</settlement>
+									<country>France (</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Olivier</forename><surname>Ferret</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution" key="instit1">Université Paris-Saclay</orgName>
+								<orgName type="institution" key="instit2">CEA</orgName>
+								<address>
+									<postCode>F-91120</postCode>
+									<settlement>Palaiseau</settlement>
+									<region>List</region>
+									<country>France (</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Camille</forename><surname>Guinaudeau</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution" key="instit1">Université Paris-Saclay</orgName>
+								<orgName type="institution" key="instit2">CNRS</orgName>
+								<orgName type="institution" key="instit3">LISN</orgName>
+								<address>
+									<postCode>91400</postCode>
+									<settlement>Orsay</settlement>
+									<country>France (</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Hervé</forename><surname>Le Borgne</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution" key="instit1">Université Paris-Saclay</orgName>
+								<orgName type="institution" key="instit2">CEA</orgName>
+								<address>
+									<postCode>F-91120</postCode>
+									<settlement>Palaiseau</settlement>
+									<region>List</region>
+									<country>France (</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Romaric</forename><surname>Besançon</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution" key="instit1">Université Paris-Saclay</orgName>
+								<orgName type="institution" key="instit2">CEA</orgName>
+								<address>
+									<postCode>F-91120</postCode>
+									<settlement>Palaiseau</settlement>
+									<region>List</region>
+									<country>France (</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jose</forename><forename type="middle">G</forename><surname>Moreno</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="institution" key="instit1">IRIT</orgName>
+								<orgName type="institution" key="instit2">Université Paul Sabatier</orgName>
+								<address>
+									<settlement>Toulouse</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jesús</forename><forename type="middle">Lovón</forename><surname>Melgarejo</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="institution" key="instit1">IRIT</orgName>
+								<orgName type="institution" key="instit2">Université Paul Sabatier</orgName>
+								<address>
+									<settlement>Toulouse</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Un jeu de données pour répondre à des questions visuelles à propos d&apos;entités nommées en utilisant des bases de connaissances</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">FCA7519050BC5D978358BBD707DCF3D6</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-04-06T11:07+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>dataset</term>
+					<term>knowledge-based visual question answering</term>
+					<term>multimodality</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Dans le contexte général des traitements multimodaux, nous nous intéressons à la tâche de réponse à des questions visuelles à propos d'entités nommées en utilisant des bases de connaissances (KVQAE). Nous mettons à disposition ViQuAE, un nouveau jeu de données de 3 700 questions associées à des images, annoté à l'aide d'une méthode semi-automatique. C'est le premier jeu de données de KVQAE comprenant des types d'entités variés associé à une base de connaissances composée d'1,5 million d'articles Wikipédia, incluant textes et images. Nous proposons également un modèle de référence de KVQAE en deux étapes : recherche d'information puis extraction des réponses. Les résultats de nos expériences démontrent empiriquement la difficulté de la tâche et ouvrent la voie à une meilleure représentation multimodale des entités nommées.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="fr">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction et travaux connexes</head><p>La fusion de modalités telles que l'image et le texte pour rechercher des informations est un problème ancien et difficile du fait de la différence de niveaux de leurs sémantiques <ref type="bibr" target="#b17">(Srihari et al., 2000)</ref>. C'est particulièrement vrai pour répondre à des questions visuelles à propos d'entités nommées en utilisant des bases de connaissances (KVQAE, Knowledge-based Visual Question Answering about named "Which constituency did this man represent when he was Prime Minister ?" "Macmillan indeed lost Stockton in the landslide Labour victory of 1945, but returned to Parliament in the November 1945 by-election in Bromley."</p><p>"In which year did this ocean liner make her maiden voyage ?" "Queen Elizabeth 2, often referred to simply as QE2, is a floating hotel and retired ocean liner built for the Cunard Line which was operated by Cunard as both a transatlantic liner and a cruise ship from 1969 to 2008." FIGURE 1 -Exemple de questions du jeu de données ViQuAE avec leur image contextuelle et la source de la réponse (issue de la base de connaissances).</p><p>Entities), la tâche considérée dans cet article, où différents types de relations peuvent lier une question et l'image qui lui est associée comme contexte (cf. Figure <ref type="figure">1</ref>).</p><p>Dans la tâche classique de réponse à des questions visuelles (VQA, Visual Question Answering), le contenu de l'image associée, par exemple la couleur d'un objet ou le nombre d'objets, est le sujet de la question <ref type="bibr" target="#b2">(Antol et al., 2015)</ref>. La VQA fondée sur les connaissances <ref type="bibr" target="#b19">(Wang et al., 2017</ref><ref type="bibr" target="#b20">(Wang et al., , 2018;;</ref><ref type="bibr" target="#b13">Marino et al., 2019)</ref> utilise quant à elle l'image comme contexte pour poser des questions et trouver des réponses dans des bases de connaissances (BC). Cependant, ces deux champs de recherche se focalisent principalement sur des catégories d'objets à gros grain en s'appuyant sur un prétraitement de détection d'objets <ref type="bibr" target="#b0">(Anderson et al., 2018;</ref><ref type="bibr" target="#b8">Gardères &amp; Ziaeefard, 2020)</ref>. Dans cette optique, la seconde question de la Figure <ref type="figure">1</ref> pourrait porter sur le type de bateau : "Est-ce un bateau de pêche ?" Au contraire, notre travail se concentre sur des questions nécessitant des connaissances à propos des entités nommées, telles que le bateau Queen Elizabeth 2. Nous avons conçu et publions le jeu de données ViQuAE dans ce but<ref type="foot" target="#foot_0">1</ref> . Notre jeu de données a été conçu comme un benchmark pour suivre les progrès des systèmes de KVQAE. En effet, nous pensons que la KVQAE est une tâche bien définie qui peut être évaluée facilement. Elle est donc appropriée pour rendre compte des progrès de la qualité des représentations multimodales d'entités nommées. La représentation multimodale des entités est une question centrale qui permettra de rendre les interactions homme-machine plus naturelles. Par exemple, en regardant un film, on peut se demander "Où ai-je déjà vu cette actrice ?" ou "Est-ce qu'elle a déjà gagné un Oscar ?" Les questions sur les entités nommées sont très difficiles, car les BC actuelles en contiennent des millions. De ce point de vue, utiliser chaque modalité indépendamment n'est pas suffisamment discriminant pour répondre au besoin de l'utilisateur. À titre d'exemple, dans les images de la Figure <ref type="figure">1</ref>, il est assez complexe de reconnaître Harold Macmillan au sein d'une BC contenant des millions de personnes. Cependant, on peut déduire de la question qu'il était premier ministre, ce qui permet de filtrer les candidats à quelques centaines. 2 Jeu de données et base de connaissances ViQuAE</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Annotation automatique</head><p>Pour limiter les efforts d'annotation manuelle, nous nous appuyons sur des jeux de données de question-réponse (QA) existants, qui comprennent des questions couvrant divers sujets et entités. Nous avons ainsi décidé d'utiliser le jeu de données textuel TriviaQA en raison de sa taille et de la typologie de ses questions <ref type="bibr" target="#b11">(Joshi et al., 2017)</ref>. L'idée principale du processus est de remplacer la mention de l'entité dans la question par une représentation visuelle de l'entité. Celle-ci est alors référencée par une mention ambiguë (e.g. "cet homme"). De cette façon, il n'est pas possible de répondre à la question sans s'appuyer sur l'image contextuelle. Dans le premier exemple de la Figure <ref type="figure">1</ref>, la mention de l'entité nommée "Harold Macmillan" de la question originale est ainsi remplacée par la mention ambiguë "this man".</p><p>Ce processus débute par une analyse syntaxique et une identification des entités nommées dans les questions à l'aide de spaCy (Explosion, 2022). À partir de ces mentions d'entité, puisque la réponse à la question est connue, la désambiguïsation peut être effectuée en vérifiant si la réponse est présente dans l'article Wikipédia de l'entité candidate. Wikidata permet de recueillir des informations sur les entités désambiguïsées : leur type, leur profession, leur genre et leur catégorie Commons. Cette dernière est utilisée pour trouver une image pertinente tandis que les autres sont nécessaires pour générer une mention ambiguë. Les humains sont mentionnés par leur profession et les autres entités par leur type. De plus, si le genre est disponible, nous utilisons également "this man/woman" et "he-him-his/she-her-hers" selon la dépendance syntaxique de la mention originale. Étant donné que certaines entités abstraites, telles que les pays ou les nationalités, sont souvent mentionnées dans les questions mais ne sont pas pertinentes pour la KVQAE, le type d'entité est restreint à faire partie ou être une sous-classe d'une liste de types construite manuellement, disponible avec le jeu de données. De plus, pour se conformer à la RGPD (European Parliament, 2016), seules les questions portant sur des personnes décédées sont conservées. Les images sont récupérées à partir de la catégorie Commons de l'entité.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Annotation manuelle</head><p>L'annotation automatique décrite ci-dessus présente quelques inconvénients. Les deux principales sources d'erreurs sont : (i) l'image sélectionnée, qui peut être inappropriée ; (ii) la spécificité de la question, qui permet parfois de répondre sans regarder l'image. Pour remédier à ce problème, une interface d'annotation a été conçue à l'aide de Label <ref type="bibr">Studio (Tkachenko et al., 2021)</ref>. L'annotateur peut reformuler librement la question tant que la réponse n'est pas modifiée. Il doit également choisir parmi huit images candidates si celle sélectionnée n'est pas appropriée. En dernier recours, l'annotateur peut simplement rejeter la question. L'interface et les instructions d'annotation font partie de notre base de code.</p><p>Cette annotation manuelle a été réalisée par sept annotateurs internes. L'interface a permis de traiter environ 120 questions par heure. La proportion de questions à propos d'humains a été équilibrée pour assurer la diversité du jeu de données. Nous avons annoté 5 700 questions générées, parmi lesquelles 2 000 ont été écartées, principalement parce qu'elles étaient sur-spécifiées ou que l'image n'était pas pertinente. Par conséquent, le jeu de données ViQuAE est constitué de 3 700 questions, réparties aléatoirement en ensembles de taille égale pour l'entraînement, la validation et le test, sans recouvrement entre les images. La majorité (55 %) des questions valides ont été éditées par les annotateurs, avec une distance de Levenshtein moyenne de 5 mots.</p><p>Pour mesurer l'accord inter-annotateur, un sous-ensemble de 103 questions a été annoté par au moins 3 annotateurs différents. L'accord est ensuite calculé en utilisant le Kappa de Fleiss <ref type="bibr">(Fleiss, 1971)</ref>. Les annotateurs se sont mis d'accord pour rejeter ou non la question avec κ = 0.33, montrant un accord léger. En effet, déterminer si une question est sur-spécifiée ou non peut être assez subjectif. De plus, la reformulation de certaines questions sur-spécifiées peut être subtile. Cependant, il faut rappeler que, dans notre cas, le désaccord inter-annotateurs ne concerne pas la réponse à la question mais seulement le filtrage du jeu de données généré automatiquement, puisque les questions et les réponses sont définies dans TriviaQA et que l'annotateur ne peut pas changer la réponse.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Analyse des données</head><p>Le jeu de données ViQuAE se compose de 3 700 questions contextualisées par 3 300 images uniques, dont deux exemples sont présentés à la Figure <ref type="figure">1</ref>. Les questions comportent en moyenne 12 mots, pour un vocabulaire de 4 700 mots. Sur les 3 700 réponses, les plus communes n'apparaissent que 13 fois, soit 0,3 % du total, ce qui montre l'absence de biais a priori sur les réponses. De plus, il n'y a qu'un chevauchement de 25 % des réponses et de 18 % des entités entre les ensembles d'entraînement et de test. Ces trois points soulignent la différence entre la KVQAE et la VQA (fondé sur la connaissance ou pas) et démontrent que traiter la KVQAE comme une tâche de classification serait inefficace.</p><p>Une contribution importante du jeu de données est sa diversité d'entités, qui est l'un des principaux défis pour les représentations multimodales (cf. Section 1). ViQuAE comprend près de mille types d'entités différents (issus de l'ontologie Wikidata) parmi ses 2 400 entités uniques.  <ref type="bibr" target="#b22">(Zhang et al., 2016)</ref> pour la détection des visages. Si plusieurs visages sont détectés, seul celui associé à la plus forte probabilité est conservé. 6,6 % des humains de la BC n'ont pas de visage détecté et ont donc été écartés. ArcFace est pré-entraîné sur MS-Celeb <ref type="bibr" target="#b9">(Guo et al., 2016)</ref>, composé de photos de célébrités. Ses entités ont un certain chevauchement avec ViQuAE, qui est analysé dans la section suivante.</p><p>Fusion multimodale Les résultats de la recherche par l'image sont ensuite mis en correspondance avec les passages pour la fusion avec la recherche textuelle. Les scores des résultats de ces modèles ayant des distributions très différentes, ils sont centrés-réduits avant de les fusionner. La fusion est faite via une combinaison linéaire : Résultats Puisqu'il est fondé sur TriviaQA <ref type="bibr" target="#b11">(Joshi et al., 2017)</ref>, ViQuAE n'est supervisé que de façon distante, i.e. un passage est jugé pertinent s'il contient la réponse. Nous évaluons la RI avec la précision à K (P@K) et le rang réciproque moyen (MRR) ainsi que Hits@K. Hits@K représente la # Modèle MRR P@1 P@20 Hits@20 a B (BM25, texte seulement) 19,0 13,1 5,9 39,5 b D 0 (DPR zero-shot, texte seulement) 30,5 a 21,2 a 16,2 ac 60,5 ac c 0,3(B +FA)+(1−F)(0,1I +0,3C)</p><formula xml:id="formula_0">P = α b B +α d D+Fα a A+(1−F)(α i I +α c C). On note B,</formula><p>27,9 a 20,4 a 10,1 a 50,5 a d 0,3(D 0 +FA)+(1−F)(0,1I +0,3C) 36,0 abce 26,7 abce 17,1 ac 65,2 abce e D f (DPR few-shot, texte seulement) 32,8 abc 22,8 a 16,4 ac 61,2 ac f 0,3(D f +FA)+0,2(1−F)(I +C) 37,9 abcde 27,8 abce 17,5 ac 65,7 abce TABLE 2 -Résultats de la RI avec les baselines textuelles et la fusion de la recherche multimodale, dans les deux configurations d'apprentissage : sans ou avec peu d'exemples. Les exposants dénotent des différences significatives dans le test de randomisation de Fisher <ref type="bibr" target="#b7">(Fisher, 1937;</ref><ref type="bibr" target="#b17">Smucker et al., 2007)</ref> avec p ≤ 0,01. Hits@1 est omis car il est équivalent à P@1.</p><p>proportion de questions pour lesquelles la RI récupère au moins un passage pertinent parmi les K premiers. Les résultats sont présentés dans le Tableau 2. Nous présentons également comme références les performances de BM25 et de DPR utilisant seulement le texte. Le gain de performance de DPR par rapport à BM25 est important, même dans sa version zero-shot où il surpasse significativement BM25 et même la recherche multimodale fondée sur BM25 en P@20 et Hits@20. Contrairement à BM25, DPR est capable de trouver des passages pertinents même avec très peu de chevauchement lexical grâce à ses représentations sémantiques abstraites. Néanmoins, il faut noter que la fusion multimodale apporte également des gains de performance significatifs. Ce gain diffère selon le type de l'entité-sujet de la question. Pour les questions à propos d'humains, la P@1 passe de 14,4 avec BM25 seul à 24,4 en fusionnant BM25 et la recherche d'images, soit une amélioration de 70 %. En comparaison, l'amélioration de 41 % de la P@1 pour les questions sur les non-humains est plus faible. En outre, sur le sous-ensemble d'entités qui se chevauchent avec MS-Celeb (le jeu de données de pré-entraînement d'ArcFace), P@1 augmente encore à 25,7, ce qui représente une amélioration de 5 % par rapport à tous les humains. La tendance est similaire avec DPR, bien que sa baseline textuelle soit meilleure.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Extraction des réponses</head></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>D, A, I, C les scores BM25, DPR, ArcFace, ImageNet-ResNet et CLIP respectivement, chacun étant pondéré par l'hyperparamètre α j . F ∈ {0,1} dénote la détection d'un visage. Seuls les 100 premiers passages sont considérés. Par conséquent, si, compte tenu d'une requête, un passage n'est pas retrouvé par un système donné, on lui attribue le score minimum des autres passages retrouvés par ce système. Les passages sont ensuite réordonnés par rapport au score P . Les hyperparamètres d'interpolation α j sont réglés sur l'ensemble de validation en utilisant une recherche par quadrillage pour maximiser le rang réciproque moyen. Pour limiter l'espace de recherche et permettre une comparaison directe entre BM25 et DPR nous contraignons j α j = 1 et n'utilisons qu'un seul modèle pour la recherche texte : on a donc α b = 0 ou α d = 0.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head></head><label></label><figDesc>Shah et al. (2019)  ont déjà travaillé sur la KVQAE mais se sont limités aux entités nommées de type personne. Au contraire, ViQuAE comprend divers types d'entités. Cette diversité est une question centrale dans la KVQAE, notamment en raison de l'hétérogénéité des représentations visuelles qui en résulte. Entre autres entités, les entreprises peuvent être ainsi représentées par un bâtiment (e.g. leur siège), un produit manufacturé qu'elles vendent ou simplement leur logo. La KVQAE nécessite donc une représentation multimodale des connaissances, ce qui la distingue clairement de la recherche d'image par le contenu. Cette diversité implique également la nécessité d'étudier d'autres types d'entités que les personnes, qui peuvent assez bien être reconnues visuellement à partir de leur seul visage. Par ailleurs, les questions du jeu de données de Shah et al. sont générées automatiquement à partir de patrons et de Wikidata, ce qui limite en particulier leur diversité de formes et de sujets. Enfin, Shah et al. utilisent une base de connaissances construite à partir d'un graphe de connaissances au lieu d'un texte non structuré, ce qui est aussi une différence importante avec notre travail.</figDesc><table><row><cell>Sur un autre plan, ViQuAE, avec ses 3 700 questions, s'inscrit dans le courant des travaux sur l'apprentissage sans (zero-shot) ou avec peu d'exemples (few-shot), avec une double idée : d'une part, la diversité des tâches unissant texte et image ne permet pas de développer des jeux de données d'une taille suffisante pour entraîner de gros modèles à partir de zéro ; d'autre part, les percées des travaux reposant sur les Foundation Models (Bommasani et al., 2021) permettent de s'affranchir d'un tel entraînement. Nous espérons ainsi que ViQuAE encouragera les études vers des modèles transférables ou des techniques d'apprentissage sans ou avec peu d'exemples, nécessaires pour la KVQAE.</cell></row><row><cell>Plus spécifiquement, nous présentons dans cet article trois principales contributions : (i) nous fournis-sons un nouveau jeu de données pour la KVQAE, le premier à inclure divers types d'entités ainsi qu'une procédure extensible pour l'annotation semi-automatique ; (ii) nous rendons disponible une BC multimodale d'1,5 million d'entités fondée sur Wikipédia ; (iii) nous proposons et mettons en libre accès des méthodes d'apprentissage avec peu ou sans exemple pour traiter la KVQAE, étant les premiers à traiter la tâche sur divers types d'entités et en utilisant une BC textuelle.</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>TABLE 1 -</head><label>1</label><figDesc>Toutefois, ces types Statistiques du jeu de données par rapport à KVQA(Shah et al., 2019). *En moyenne sur 49 sous-ensembles aléatoires de la même taille que ViQuAE, le vocabulaire du jeu de données KVQA entier se compose de 8,4K tokens. Cette décomposition en deux étapes est standard en QA textuelle (e.g.<ref type="bibr" target="#b4">Chen et al., 2017)</ref>. D'après<ref type="bibr" target="#b11">Joshi et al. (2017)</ref>, les alias Wikipédia d'une réponse donnée sont considérés comme des réponses valides.3.1 Recherche d'informationRecherche de texte Nous adoptons une approche de fusion tardive : la recherche est effectuée indépendamment avec la question et l'image puis les résultats sont fusionnés au niveau des scores. En amont de la recherche, nous enlevons les données semi-structurées des articles, comme les tableaux et les listes. Chaque article est ensuite divisé en passages disjoints de 100 mots tout en préservant les limites des phrases, ce qui produit 12 millions de passages. Le titre de l'article est concaténé au début de chaque passage. Nous utilisons BM25<ref type="bibr" target="#b15">(Robertson et al., 1995)</ref> et DPR<ref type="bibr" target="#b12">(Karpukhin et al., 2020)</ref> pour définir une référence zero-shot et few-shot, respectivement. DPR est d'abord pré-entraîné sur TriviaQA, filtré de toutes les questions utilisées dans ViQuAE, avant d'être ajusté sur ViQuAE. Nous considérons également le modèle sans ajustement, entraîné uniquement sur TriviaQA, comme une autre référence zero-shot.</figDesc><table><row><cell># Questions # Questions par image Vocabulaire Longueur moyenne des questions Réponse la plus probable a priori Chevauchement entre les réponses Chevauchement entre les entités # Questions par entité # Types d'entités</cell><cell>ViQuAE KVQA 3 700 183K 1,1 7,4 4,7K 0,6K* 12,4 10,1 0,3 % 15,9 % 25,3 % 89,4 % 18,1 % 40,6 % 1,5 9,7 980 1</cell></row></table><note>ne sont pas exclusifs : 1,6 type sont attribués à chaque entité en moyenne. Le jeu de données comporte 43 % d'humains, sans prendre en compte d'autres entités semblables, comme les personnages fictifs ou mythologiques, ou des groupes d'humains, par exemple les groupes de musique. Un résumé des statistiques comparées avec le jeu de données KVQA de Shah et al. (2019) est reporté dans le Tableau 1. Nous pouvons constater que, malgré sa petite taille, ViQuAE est plus diversifié sous certains aspects. Cependant, le jeu de données ViQuAE présente aussi certaines limites. L'un des inconvénients de notre processus d'annotation, et plus précisément de la désambiguïsation des entités nommées, est que les réponses sont garanties de se trouver dans la page Wikipédia de l'entité, i.e., les questions sont single-hop au niveau du document. Bien sûr, la question peut toujours nécessiter un raisonnement sur plusieurs phrases ou paragraphes du document. En revanche,(Shah et al., 2019)   comprend plusieurs questions multi-hop qui, même si elles ne semblent pas très naturelles, permettent d'évaluer les capacités de raisonnement du modèle.2.4 La base de connaissances ViQuAELa BC est construite à partir de la sauvegarde du 01/08/2019 de Wikipédia, disponible dans KILT<ref type="bibr" target="#b14">(Petroni et al., 2021)</ref>, comprenant 5,9M d'articles. Chacun d'eux est associé à une entité Wikidata. Nous traitons le problème de la KVQAE en deux étapes : recherche d'information (RI) puis extraction des réponses (extractive reading comprehension). Recherche d'image Pour la recherche d'images, nous utilisons deux représentations différentes de manière exclusive : ArcFace (Deng et al., 2019) pour les visages, si au moins un visage est détecté ; ImageNet-ResNet (He et al., 2016) et CLIP (Radford et al., 2021) pour l'image complète. Par conséquent, la BC est divisée en deux parties : les humains avec un visage détecté et les non-humains en considérant que les visages ne sont pertinents que pour les entités humaines. Comme Deng et al. (2019), nous utilisons MTCNN</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head></head><label></label><figDesc>Méthodes Pour établir notre référence sur ViQuAE, nous nous limitons à un modèle textuel car nous faisons l'hypothèse qu'une fois le passage pertinent retrouvé en associant texte et image, il est possible de répondre à la question sans utiliser l'image (cf. par exemple la Figure1). L'extraction des réponses est réalisée avec le modèle BERT multi-passage de<ref type="bibr" target="#b21">Wang et al. (2019)</ref>. Nous laissons le ré-ordonnancement multimodal pour de futurs travaux mais nous avons expérimenté la pondération du score de réponse a avec le score de RI du passage P t.q. a ← a•P<ref type="bibr" target="#b21">(Wang et al., 2019)</ref>. Les mêmes hyperparamètres que<ref type="bibr" target="#b12">Karpukhin et al. (2020)</ref> sont utilisés, à l'exception du ratio de passages pertinents et non pertinents par question, qui est fixé à 8 : 16. À l'inférence, l'extraction est appliquée sur les 24 premiers résultats de la RI. Comme à la section précédente, le modèle est d'abord pré-entraîné sur notre sous-ensemble de TriviaQA, puis ajusté sur ViQuAE.</figDesc><table><row><cell cols="2"># Exemples Configuration</cell><cell>F1</cell><cell>Appariement exact</cell></row><row><cell>Aucun</cell><cell>Texte seulement</cell><cell>20,96</cell><cell>18,06</cell></row><row><cell>Aucun</cell><cell cols="2">+ pondération RI 21,19</cell><cell>18,22</cell></row><row><cell>Peu Peu Peu Peu</cell><cell cols="3">Texte seulement + pondération RI 25,50 ± 0,38 22,10 ± 0,54 25,43 ± 0,42 22,07 ± 0,54 Mi-oracle 44,10 ± 0,39 40,32 ± 0,43 Oracle complet 63,17 ± 1,18 57,55 ± 1,10</cell></row></table><note>Résultats Les résultats sont présentés dans le Tableau 3. Ils sont globalement assez faibles par rapport à l'état de l'art en Question-Réponse textuelle. Pour mieux comprendre ces chiffres, nous avons étudié deux configurations différentes : (i) mi-oracle, où les 24 premiers résultats de la RI sont</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>TABLE 3 -</head><label>3</label><figDesc>Résultats de l'extraction de réponses sur l'ensemble de test de ViQuAE, moyenné après entraînement avec 5 graines aléatoires différentes pour le modèle few-shot. Les modèles zero et few-shot partagent les mêmes résultats de RI à l'inférence (24 premiers passages). filtrés pour ne contenir que des passages pertinents ; (ii) oracle complet, où le modèle ne reçoit que des passages pertinents. Ces résultats oracles pourraient servir de référence haute aux futures études.4 Conclusion et perspectivesNous présentons un nouveau jeu de données, ViQuAE, conçu comme un cadre d'évaluation pour suivre les progrès des systèmes de KVQAE. ViQuAE a été annoté selon une procédure semi-automatique que nous fournissons également. Ses questions ont pour cible une base de connaissances librement disponible d'1,5 million d'articles Wikipédia associés à des images. Nous proposons une approche de la KVQAE en deux étapes, distinguant recherche d'information et extraction des réponses, avec des méthodes d'apprentissage sans ou avec peu d'exemples dans les deux cas. Un résultat notable de cette première référence est l'apport positif de l'association du texte et de l'image dans ces différentes configurations. Sans négliger l'extraction des réponses, les évaluations soulignent par ailleurs la nécessité d'une meilleure RI. En effet, notre stratégie de fusion tardive néglige l'interaction entre les modalités. Les travaux futurs devront se concentrer sur une meilleure représentation multimodale, idéalement en intégrant le texte et l'image dans le même espace, tant du côté de la requête que du côté de la BC. Une attention particulière devra être accordée à la représentation des entités nonhumaines. Ces représentations multimodales pourront aussi bénéficier à l'étape d'extraction des réponses car nos expériences montrent que l'utilisation d'un modèle textuel seul est insuffisante si la RI est bruitée. D'autre part, bien que nous ayons démontré l'efficacité de notre BC, on pourrait bénéficier d'une BC plus riche visuellement, avec plusieurs images par entité, afin de prendre en compte la diversité des représentations. Nous espérons que ce travail encouragera la recherche vers une meilleure représentation multimodale des entités nommées.</figDesc><table /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0">. Disponible via https://github.com/PaulLerner/ViQuAE.</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Remerciements</head><p>Nous remercions les relecteurs de TALN pour leurs précieuses suggestions. Ce travail a été financé par le projet ANR-19-CE23-0028 MEERQAT. Ce travail a bénéficié d'un accès aux moyens de calcul de l'IDRIS au travers de l'allocation de ressources 2021-AD011012846 attribuée par GENCI.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">Anderson</forename><forename type="middle">P</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Buehler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Teney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gould</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering</title>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+				<meeting>the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</meeting>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">VQA : Visual Question Answering</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Antol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mitchell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Batra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">L</forename><surname>Zitnick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Parikh</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICCV.2015.279</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2015 IEEE International Conference on Computer Vision (ICCV)</title>
+				<meeting><address><addrLine>Santiago, Chile</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="2425" to="2433" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bommasani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Hudson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Adeli</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Altman R</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Arora</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Von Arx S</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Bernstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bohg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bosselut</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Brunskill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Brynjolfsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Buch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Card</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Castellon R</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Chatterji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Creel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Q</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Demszky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Donahue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Doumbouya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Durmus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ermon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Etchemendy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ethayarajh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Fei-Fei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Finn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Gale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Gillespie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Goel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Goodman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Grossman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Guha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Hashimoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Henderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hewitt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Ho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Hsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Icard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Jurafsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Kalluri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Karamcheti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Keeling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Khani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Khattab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">W</forename><surname>Koh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Krass</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Krishna R</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Kuditipudi R</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Ladhak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Leskovec</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Levent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">L</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Malik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">D</forename><surname>Manning</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mirchandani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Mitchell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Munyikwa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Nair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Narayan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Narayanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Newman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Nie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Niebles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Nilforoshan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Nyarko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Ogut</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Orr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Papadimitriou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Piech</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Portelance</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Potts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Raghunathan</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Reich R</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Rong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Roohani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ruiz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ryan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ré</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sadigh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sagawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Santhanam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Shih</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tamkin</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Taori R</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">W</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Tramèr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="middle">E</forename><surname>Wang R</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Yasunaga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>You</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zaharia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Liang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2108.07258[cs].arXiv:2108.07258</idno>
+		<title level="m">On the Opportunities and Risks of Foundation Models</title>
+				<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Reading wikipedia to answer opendomain questions</title>
+		<author>
+			<persName><forename type="first">Chen</forename><forename type="middle">D</forename><surname>Fisch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Weston</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bordes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics</title>
+		<title level="s">Long Papers</title>
+		<meeting>the 55th Annual Meeting of the Association for Computational Linguistics</meeting>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="1870" to="1879" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">ArcFace : Additive Angular Margin Loss for Deep Face Recognition</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zafeiriou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+				<meeting>the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation) (Text with EEA relevance)</title>
+		<ptr target="https://spacy.io/" />
+	</analytic>
+	<monogr>
+		<title level="m">Legislative Body : EP, CONSIL. EXPLOSION</title>
+				<imprint>
+			<date type="published" when="2016-04-27">2016. 27 April 2016. 2022</date>
+		</imprint>
+	</monogr>
+	<note>Spacy : Industrial-strength NLP</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Measuring nominal scale agreement among many raters</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Fisher</surname></persName>
+		</author>
+		<idno type="DOI">10.1037/h0031619</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Psychological Bulletin</title>
+		<editor>Oliver &amp; Boyd, Edinburgh &amp; London., 2ème édition. FLEISS J. L.</editor>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="378" to="382" />
+			<date type="published" when="1937">1937. 1971</date>
+		</imprint>
+	</monogr>
+	<note>The Design of Experiments</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">ConceptBert : Concept-Aware Representation for Visual Question Answering</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Gardères</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ziaeefard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Findings of the Association for Computational Linguistics : EMNLP 2020</title>
+				<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="489" to="498" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">MS-Celeb-1M : A Dataset and Benchmark for Large-Scale Face Recognition</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gao</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-46487-9_6</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Computer Vision -ECCV 2016</title>
+		<title level="s">Lecture Notes in Computer Science</title>
+		<editor>
+			<persName><forename type="first">B</forename><surname>Leibe</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">J</forename><surname>Matas</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">N</forename><surname>Sebe</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Welling</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Éds</forename></persName>
+		</editor>
+		<meeting><address><addrLine>Cham</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="87" to="102" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Deep residual learning for image recognition</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE conference on computer vision and pattern recognition</title>
+				<meeting>the IEEE conference on computer vision and pattern recognition</meeting>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="770" to="778" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">TriviaQA : A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Weld</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zettlemoyer</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/P17-1147</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics</title>
+		<title level="s">Long Papers</title>
+		<meeting>the 55th Annual Meeting of the Association for Computational Linguistics<address><addrLine>Vancouver, Canada</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="1601" to="1611" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Dense Passage Retrieval for Open-Domain Question Answering</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Karpukhin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Oguz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Min</forename><forename type="middle">S</forename><surname>Lewis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Edunov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Yih W.-T</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing</title>
+				<meeting>the 2020 Conference on Empirical Methods in Natural Language Processing<address><addrLine>Online</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="6769" to="6781" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">OK-VQA : A visual question answering benchmark requiring external knowledge</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Marino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rastegari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Farhadi</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Mottaghi R</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition</title>
+				<meeting>the IEEE Conference on Computer Vision and Pattern Recognition</meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="3195" to="3204" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">KILT : a benchmark for knowledge intensive language tasks</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Petroni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Piktus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Lewis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Yazdani</surname></persName>
+		</author>
+		<author>
+			<persName><surname>De Cao N</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Thorne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Jernite</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Karpukhin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Maillard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Plachouras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Rocktäschel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Riedel</surname></persName>
+		</author>
+		<idno>DOI : 10.18653</idno>
+		<ptr target="/v1/2021.naacl-main.200" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2021 Conference of the North American Chapter</title>
+				<meeting>the 2021 Conference of the North American Chapter<address><addrLine>Online</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="2523" to="2544" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Learning transferable visual models from natural language supervision</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Radford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">W</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Hallacy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ramesh</forename><forename type="middle">A</forename><surname>Goh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sastry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Askell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mishkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning</title>
+				<editor>
+			<persName><forename type="first">D</forename><forename type="middle">K</forename><surname>Harman</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Éd</forename></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="1995">2021. 1995</date>
+			<biblScope unit="volume">500</biblScope>
+			<biblScope unit="page" from="109" to="126" />
+		</imprint>
+		<respStmt>
+			<orgName>National Institute of Standards and Technology (NIST)</orgName>
+		</respStmt>
+	</monogr>
+	<note>Third Text REtrieval Conference (TREC-3)</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">KVQA : Knowledge-Aware Visual Question Answering</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mishra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Yadati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Talukdar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">P</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+				<meeting>the AAAI Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="8876" to="8884" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">A comparison of statistical significance tests for information retrieval evaluation</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Smucker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Allan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Carterette</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="middle">K</forename><surname>Srihari R</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Rao A. ; M</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Malyuk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Shevchenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Holmanyuk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Liubimov</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1321440.1321528</idno>
+		<idno>DOI : 10.1023/A :1009962928226. TKACHENKO</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the sixteenth ACM conference on Conference on information and knowledge management, CIKM &apos;07</title>
+				<meeting>the sixteenth ACM conference on Conference on information and knowledge management, CIKM &apos;07<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computing Machinery</publisher>
+			<date type="published" when="2000">2007. 2000. 2021</date>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="245" to="275" />
+		</imprint>
+	</monogr>
+	<note>Intelligent Indexing and Semantic Retrieval of Multimodal Documents</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Label Studio : Data labeling software</title>
+		<ptr target="https://github.com/heartexlabs/label-studio" />
+	</analytic>
+	<monogr>
+		<title level="m">Open source software available from</title>
+				<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Explicit knowledge-based reasoning for visual question answering</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dick</forename><forename type="middle">A</forename><surname>Van Den</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Henge</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 26th International Joint Conference on Artificial Intelligence</title>
+				<meeting>the 26th International Joint Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="1290" to="1296" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">FVQA : Fact-Based Visual Question Answering</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dick</forename><forename type="middle">A</forename><surname>Van Den</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hengel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE transactions on pattern analysis and machine intelligence</title>
+				<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page" from="2413" to="2427" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Multi-passage BERT : A Globally Normalized BERT Model for Open-domain Question Answering</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Nallapati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Xiang</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/D19-1599</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)</title>
+				<meeting>the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)<address><addrLine>Hong Kong, China</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="5878" to="5882" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Joint Face Detection and Alignment Using Multitask Cascaded Convolutional Networks</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Qiao</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/LSP.2016.2603342</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Signal Processing Letters</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1499" to="1503" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note>IEEE Signal Processing Letters</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
