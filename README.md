@@ -1,2 +1,2 @@
 # Sauts-Stylistiques
-Ce github sera mis à jour dans les prochains jours 
+Le code pour les sauts stylistiques sera mis à jour bientôt.
