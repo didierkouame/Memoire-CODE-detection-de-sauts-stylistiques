@@ -1,5 +1,5 @@
 # Sauts-Stylistiques
-Similarité
-Taux de lexicalité 
-Clustering
-Motifs syntaxiques
+Similarité,
+Taux de lexicalité, 
+Clustering,
+Motifs syntaxiques.
