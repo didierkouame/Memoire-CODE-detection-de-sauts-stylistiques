@@ -1,4 +1,4 @@
-# Sauts-Stylistiques
+# Détection de Sauts Stylistiques
 Similarité,
 Taux de lexicalité, 
 Clustering,
